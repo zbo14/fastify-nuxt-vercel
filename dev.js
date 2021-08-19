@@ -22,7 +22,7 @@ const main = async (req, res) => {
     fastify.nuxt('*')
   })
 
-  await routes(fastify)
+  routes(fastify)
 
   const port = +SERVER_PORT || 3000
 

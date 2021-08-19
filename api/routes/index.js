@@ -6,12 +6,12 @@ const common = require('../common')
 
 const ROUTES_DIRNAME = __dirname
 
-module.exports = async (fastify, dirname = '') => {
-  const entries = await fs.promises.readdir(path.join(ROUTES_DIRNAME, dirname), { withFileTypes: true })
+module.exports = (fastify, dirname = '') => {
+  const entries = fs.promises.readdirSync(path.join(ROUTES_DIRNAME, dirname), { withFileTypes: true })
 
-  const promises = entries.map(async entry => {
+  entries.forEach(entry => {
     if (entry.isDirectory()) {
-      await module.exports(fastify, path.join(dirname, entry.name))
+      module.exports(fastify, path.join(dirname, entry.name))
       return
     }
 
@@ -25,6 +25,4 @@ module.exports = async (fastify, dirname = '') => {
 
     common.route(fastify, routePath, route)
   })
-
-  await Promise.all(promises)
 }
