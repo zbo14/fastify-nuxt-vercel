@@ -27,6 +27,8 @@ $ yarn generate
 
 You can deploy via the Vercel dashboard *or* install the [CLI](https://vercel.com/cli) and run `vercel --prod`.
 
+Make sure the code repository is linked to the Vercel project so pushes automatically trigger deploys.
+
 ## Environment Variables
 
 See `.env.example`. The actual values will be parsed from `.env` (gitignored).
