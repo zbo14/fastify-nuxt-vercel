@@ -4,7 +4,7 @@ GitHub template for a [Fastify](https://www.fastify.io/) + [Nuxt](https://nuxtjs
 
 This project is intended for apps that require server-side rendering and/or business logic. If you don't have these requirements, it's better to stick with a [Jamstack](https://jamstack.org/) framework like [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), or the like.
 
-[Tailwind CSS](https://tailwindcss.com/) comes included.
+[Tailwind CSS](https://tailwindcss.com/) and Google Fonts included.
 
 ## Build Setup
 
