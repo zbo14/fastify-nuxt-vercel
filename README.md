@@ -1,6 +1,6 @@
 # fastify-nuxt-vercel
 
-A GitHub template for a [Nuxt](https://nuxtjs.org/) app with a [Fastify](https://www.fastify.io/) web server that easily deploys on [vercel](https://vercel.com)!
+GitHub template for a [Fastify](https://www.fastify.io/) + [Nuxt](https://nuxtjs.org/) app that deploys to [vercel](https://vercel.com)!
 
 This project is intended for apps that require server-side rendering and/or business logic. If you don't have these requirements, it's better to stick with a [Jamstack](https://jamstack.org/) framework like [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), or the like.
 
