@@ -7,7 +7,7 @@ const common = require('../common')
 const ROUTES_DIRNAME = __dirname
 
 module.exports = (fastify, dirname = '') => {
-  const entries = fs.promises.readdirSync(path.join(ROUTES_DIRNAME, dirname), { withFileTypes: true })
+  const entries = fs.readdirSync(path.join(ROUTES_DIRNAME, dirname), { withFileTypes: true })
 
   entries.forEach(entry => {
     if (entry.isDirectory()) {
