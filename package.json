@@ -3,12 +3,14 @@
   "version": "0.0.1",
   "private": true,
   "scripts": {
+    "postinstall": "bash scripts/postinstall.sh",
     "dev": "node dev",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
-    "lint": "yarn lint:js"
+    "lint": "yarn lint:js",
+    "routes:clear": "bash scripts/clear-routes.sh"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",

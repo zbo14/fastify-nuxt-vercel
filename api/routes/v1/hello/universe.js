@@ -1,3 +1,7 @@
+const signed = !!process.env.COOKIE_SECRET
+
 exports.GET = (req, reply) => {
-  reply.send('Hello universe')
+  reply
+    .cookie('foo', 'bar', { signed })
+    .send('Hello universe')
 }

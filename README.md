@@ -1,6 +1,6 @@
 # fastify-nuxt-vercel
 
-GitHub template for a [Fastify](https://www.fastify.io/) + [Nuxt](https://nuxtjs.org/) app that deploys to [vercel](https://vercel.com)!
+GitHub template for a [Fastify](https://www.fastify.io/) + [Nuxt](https://nuxtjs.org/) app that deploys to [Vercel](https://vercel.com)!
 
 This project is intended for apps that require server-side rendering and/or business logic. If you don't have these requirements, it's better to stick with a [Jamstack](https://jamstack.org/) framework like [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), or the like.
 
@@ -25,11 +25,19 @@ $ yarn generate
 
 ## Deployment
 
-TODO
+You can deploy via the Vercel dashboard *or* install the [CLI](https://vercel.com/cli) and run `vercel --prod`.
 
 ## Environment Variables
 
-TODO
+See `.env.example`. The actual values will be parsed from `.env` (gitignored).
+
+### `COOKIE_SECRET`
+
+The secret used to sign cookies (default: none).
+
+### `SERVER_PORT`
+
+The port the Fastify server listens on (default: 3000).
 
 ## Special Directories
 
@@ -38,6 +46,8 @@ You can create the following extra directories, some of which have special behav
 ### `api`
 
 Contains (1) a `common` module with predefined and custom helper functions, and (2) a `routes` subdirectory with your API routes.
+
+To clear the example API routes, run `yarn routes:clear`.
 
 ### `assets`
 
