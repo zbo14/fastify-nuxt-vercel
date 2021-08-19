@@ -11,8 +11,9 @@ fastify.register(cookie, {
   secret: process.env.SIGNING_SECRET
 })
 
+routes(fastify)
+
 export default async (req, res) => {
-  await routes(fastify)
   await fastify.ready()
   fastify.server.emit('request', req, res)
 }
