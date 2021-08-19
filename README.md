@@ -1,5 +1,11 @@
 # fastify-nuxt-vercel
 
+A GitHub template for a [Nuxt](https://nuxtjs.org/) app with a [Fastify](https://www.fastify.io/) web server that easily deploys on [vercel](https://vercel.com)!
+
+This project is intended for apps that require server-side rendering and/or business logic. If you don't have these requirements, it's better to stick with a [Jamstack](https://jamstack.org/) framework like [Gatsby](https://www.gatsbyjs.com/), [Gridsome](https://gridsome.org/), or the like.
+
+[Tailwind CSS](https://tailwindcss.com/) comes included.
+
 ## Build Setup
 
 ```bash
@@ -17,11 +23,21 @@ $ yarn start
 $ yarn generate
 ```
 
-For detailed explanation on how things work, check out the [documentation](https://nuxtjs.org).
+## Deployment
+
+TODO
+
+## Environment Variables
+
+TODO
 
 ## Special Directories
 
 You can create the following extra directories, some of which have special behaviors. Only `pages` is required; you can delete them if you don't want to use their functionality.
+
+### `api`
+
+Contains (1) a `common` module with predefined and custom helper functions, and (2) a `routes` subdirectory with your API routes.
 
 ### `assets`
 
@@ -40,7 +56,6 @@ More information about the usage of this directory in [the documentation](https:
 Layouts are a great help when you want to change the look and feel of your Nuxt app, whether you want to include a sidebar or have distinct layouts for mobile and desktop.
 
 More information about the usage of this directory in [the documentation](https://nuxtjs.org/docs/2.x/directory-structure/layouts).
-
 
 ### `pages`
 

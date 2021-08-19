@@ -1,3 +1,5 @@
+// *Do not* modify this file
+
 const fs = require('fs')
 const path = require('path')
 const common = require('../common')
@@ -17,7 +19,8 @@ module.exports = async (fastify, dirname = '') => {
       return
     }
 
-    const routePath = '/' + path.join(dirname, path.basename(entry.name, '.js'))
+    const basename = path.basename(entry.name, '.js')
+    const routePath = '/' + path.join(dirname, basename === 'index' ? '' : basename)
     const route = require('.' + routePath)
 
     common.route(fastify, routePath, route)

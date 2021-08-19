@@ -18,6 +18,9 @@ const route = (fastify, path, route) => {
   })
 }
 
+// Define your own helper functions
+// and export them below
+
 module.exports = {
   route
 }
