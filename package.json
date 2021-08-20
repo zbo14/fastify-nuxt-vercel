@@ -10,7 +10,8 @@
     "generate": "nuxt generate",
     "lint:js": "eslint --ext \".js,.vue\" --ignore-path .gitignore .",
     "lint": "yarn lint:js",
-    "routes:clear": "bash scripts/clear-routes.sh"
+    "routes:clear": "bash scripts/clear-routes.sh",
+    "secret:generate": "bash scripts/generate-secret.sh"
   },
   "dependencies": {
     "@nuxtjs/pwa": "^3.3.5",

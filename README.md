@@ -31,7 +31,7 @@ Make sure the code repository is linked to the Vercel project so pushes automati
 
 ## Environment Variables
 
-See `.env.example`. The actual values will be parsed from `.env` (gitignored).
+See `.env.example`. In development, the values are parsed from `.env` (gitignored). In production, you can specify the environment variables in the Vercel dashboard.
 
 ### `COOKIE_SECRET`
 
