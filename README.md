@@ -37,6 +37,8 @@ See `.env.example`. In development, the values are parsed from `.env` (gitignore
 
 The secret used to sign cookies (default: none).
 
+You can run `yarn secret:generate` to write a pseudo-random secret to `.env`.
+
 ### `SERVER_PORT`
 
 The port the Fastify server listens on (default: 3000).
