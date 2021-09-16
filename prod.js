@@ -8,7 +8,7 @@ const routes = require('./api/routes')
 const fastify = createFastify({ ignoreTrailingSlash: true })
 
 fastify.register(cookie, {
-  secret: process.env.SIGNING_SECRET
+  secret: process.env.COOKIE_SECRET
 })
 
 routes(fastify)
